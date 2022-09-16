@@ -1,25 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&Montserrat:wght@300;800&Rubik&Roboto&family=Permanent+Marker&family=Playfair+Display&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&Baloo+Bhai+2&Montserrat&display=swap');
 
 :root {
     --col-1: darkslateblue;
-    --col-1: #454545;
-    --col-2: aliceblue;
+    --col-1: #2C3639;
+    --col-2: #EEEEEE;    
     --col-3: rgb(168, 168, 168);
-    --col-3: #34252F;
+    --col-3: #3F4E4F;
     --col-kitgreen: rgb(0,150,130);
     --col-kitblue: rgb(70,100,170);
     --delay: 2s;
   }
 
 * {
-    font-family: "Roboto", Georgia, serif;
+    font-family: "Montserrat", Georgia, serif;
+    /* font-family: "Rubik", Georgia, serif; */
 }
 
 body {
     background-color: lightsteelblue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
 }
@@ -30,22 +29,27 @@ a {
 }
 
 a:hover {
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 h1, h2, h3, h4 {
     color: var(--col-1);
-    font-family: "Roboto", Georgia, serif;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
 
 h1 {
     color: var(--col-2);
-    font-family: "Permanent Marker", Georgia, serif;
+    /* font-family: "Permanent Marker", Georgia, serif; */
+    font-family: "Baloo Bhai 2", Georgia, serif;
+    font-family: "Lalezar", Georgia, serif;
+    /* letter-spacing: 2px; */
+    font-weight: 400;
     font-size: 500%;
     text-shadow: 2px 2px 0px black;
+    margin: auto;
     margin-top: 0px;
+    max-width: 600px;
 }
 
 p {
@@ -62,6 +66,8 @@ p {
 
 .herotext {
     font-size: 200%;
+    margin: auto;
+    max-width: 600px;
 }
 
 .section {
