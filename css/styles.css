@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&Baloo+Bhai+2&Montserrat&display=swap');
 
 :root {
-    --col-1: darkslateblue;
+    /* --col-1: darkslateblue; */
     --col-1: #2C3639;
     --col-2: #EEEEEE;    
     --col-3: rgb(168, 168, 168);
-    --col-3: #3F4E4F;
+    /* --col-3: #3F4E4F; */
     --col-kitgreen: rgb(0,150,130);
     --col-kitblue: rgb(70,100,170);
     --delay: 2s;
@@ -41,15 +41,15 @@ h1, h2, h3, h4 {
 h1 {
     color: var(--col-2);
     /* font-family: "Permanent Marker", Georgia, serif; */
-    font-family: "Baloo Bhai 2", Georgia, serif;
-    font-family: "Lalezar", Georgia, serif;
+    /* font-family: "Baloo Bhai 2", Georgia, serif; */
+    /* font-family: "Lalezar", Georgia, serif; */
     /* letter-spacing: 2px; */
-    font-weight: 400;
-    font-size: 500%;
+    font-weight: 200;
+    font-size: 400%;
     text-shadow: 2px 2px 0px black;
     margin: auto;
     margin-top: 0px;
-    max-width: 600px;
+    max-width: 1200px;
 }
 
 p {
@@ -67,7 +67,7 @@ p {
 .herotext {
     font-size: 200%;
     margin: auto;
-    max-width: 600px;
+    max-width: 1200px;
 }
 
 .section {
@@ -108,11 +108,9 @@ a.navbar:hover {
 }
 
 .heroimg{
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 1000px;
 }
-
-
 
 @keyframes move {
     from {
@@ -174,3 +172,74 @@ a.navbar:hover {
     animation-delay: calc(4*var(--delay));
     right: 60vh;
 }
+
+/* Three columns side by side */
+.personcolumn {
+    float: left;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+.projectcolumn {
+float: left;
+width: 49%;
+margin-bottom: 16px;
+padding: 0 8px;
+}
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .personcolumn {
+      width: 100%;
+      display: block;
+    }
+  }
+ 
+  .card {
+    box-shadow: 0 4px 8px 0 var(--col-1);
+    /* border-radius: 25px */
+    border-radius: 0px 0px 25px 0px;
+  }
+
+  .container {
+    padding: 0px 16px;
+  }
+
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: var(--col-1);
+  }
+  
+  .cardtext {
+    height: 200px;
+    overflow-y: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cardtext::-webkit-scrollbar {
+    display: none;
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;    
+    border-radius: 0px 0px 20px 0px;
+    padding: 8px;
+    color: var(--col-2);
+    background-color: var(--col-1);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
