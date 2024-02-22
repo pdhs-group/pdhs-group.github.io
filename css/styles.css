@@ -28,8 +28,10 @@
     --col-4: #ac3b61;
     --col-5: #38705e;
 
-    --col-kitgreen: rgb(0,150,130);
-    --col-kitblue: rgb(70,100,170);
+    --min-width-person-card: 300px;
+    --min-width-project-card: 600px;
+    --max-height-about-image: 42vh;
+
     --delay: 2s;
   }
 
@@ -203,15 +205,6 @@ a.navbar:hover {
 
 }
 
-/* Three columns side by side */
-.personcolumn {
-    float: left;
-    width: 31%;
-    margin-bottom: 16px;
-    padding: 0 16px 0 0;
-    /* padding: 0 8px; */
-  }
-
 .projectcolumn {
     float: left;
     width: 48%;
@@ -229,9 +222,7 @@ a.navbar:hover {
 }
 
 .lrcolumn-container { 
-  /* padding-top: 30px; */
   padding-left: 0;
-  padding-right: 30px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -240,20 +231,18 @@ a.navbar:hover {
 
 .about-image-container{ 
   float: right; 
-  height: 100%;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  padding-left: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
-  /* overflow: hidden;  */
 }
 
 .about-block-image{
   background-color: var(--col-1);
   overflow: hidden; 
-  height: calc(50% - (20px / 2));
+  max-height: var(--max-height-about-image);
   width: 100%;
   border-radius: 0px 0px 50px 0px;   
   box-shadow: 0 4px 8px 0 var(--col-1);
@@ -282,10 +271,7 @@ a.navbar:hover {
   p, h3{padding: 0px 40px 0 40px;}
 }
 
-/* .about-block-overlay  */
-
 .about-block-overlay-image{
-  color: var(--col-2);
   opacity: 0;
   position: absolute;
   top: 0;
@@ -294,6 +280,7 @@ a.navbar:hover {
   right: 0;
   height: 100%;
   width: 100%;
+  object-fit: cover;
   transition: 0.5s ease;
 }
 
@@ -312,13 +299,40 @@ a.navbar:hover {
   }
 }
 
+.about_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.person_grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--min-width-person-card), 100%), 1fr));
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.project_grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--min-width-project-card), 100%), 1fr));
+  gap: 20px;
+  justify-content: space-between;
+}
+
 .card {
+  width: 100%;
   background-color: var(--col-2);
   box-shadow: 0 4px 8px 0 var(--col-1);
   /* border-radius: 25px */
   border-radius: 0px 0px 25px 0px; 
   overflow: hidden;
   transition: 0.5s;
+  h3 {
+    margin-top: 0;    
+    margin-bottom: 0;
+  }
 }
 
 .container {
@@ -356,6 +370,8 @@ a.navbar:hover {
 
 .title {
   color: var(--col-1);
+  font-weight: bold;
+  /* font-style: italic; */
 }
 
 .cardtext {
