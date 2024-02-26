@@ -24,12 +24,12 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showguides="true"
-     inkscape:zoom="2.9255612"
-     inkscape:cx="318.57136"
-     inkscape:cy="550.15086"
+     inkscape:zoom="1.4627806"
+     inkscape:cx="218.76145"
+     inkscape:cy="612.87386"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="1912"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
@@ -113,6 +113,54 @@
        apply_with_weight="true"
        only_selected="false"
        uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1-8"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1-1-8"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1-1-2-4"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1-1-2-3-67"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
   </defs>
   <g
      inkscape:label="Ebene 1"
@@ -150,8 +198,8 @@
        x="79.947624"
        y="125.04483"
        inkscape:export-filename="navbar_button_off.jpg"
-       inkscape:export-xdpi="1000"
-       inkscape:export-ydpi="1000" />
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <g
        id="g1"
        transform="translate(0.6965992)">
@@ -184,19 +232,54 @@
          inkscape:original-d="m 90.552729,71.62362 c 2.984318,0 5.968638,0 8.952955,0"
          transform="matrix(0.59105253,0,0,0.59105253,27.449397,92.871506)" />
     </g>
+    <rect
+       style="fill:#1d2a35;stroke:#f2f5f8;stroke-width:0.529166;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1-2"
+       width="12.7"
+       height="12.7"
+       x="98.46846"
+       y="125.04482"
+       inkscape:export-filename="navbar_button_off.jpg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       ry="4.0288291" />
+    <rect
+       style="fill:#f2f5f8;fill-opacity:1;stroke:#f2f5f8;stroke-width:0;stroke-dasharray:none"
+       id="rect2"
+       width="7.937499"
+       height="0.79374897"
+       x="100.84971"
+       y="128.81514"
+       ry="0.32683784" />
+    <rect
+       style="fill:#f2f5f8;fill-opacity:1;stroke:#f2f5f8;stroke-width:0;stroke-dasharray:none"
+       id="rect2-4"
+       width="7.937499"
+       height="0.79374897"
+       x="100.84971"
+       y="130.99796"
+       ry="0.32683784" />
+    <rect
+       style="fill:#f2f5f8;fill-opacity:1;stroke:#f2f5f8;stroke-width:0;stroke-dasharray:none"
+       id="rect2-4-3"
+       width="7.937499"
+       height="0.79374897"
+       x="100.84971"
+       y="133.18079"
+       ry="0.32683784" />
     <path
        style="fill:none;stroke:#f2f5f8;stroke-width:0.895296;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
        d="m 90.552729,71.62362 c 2.984318,0 5.968638,0 8.952955,0"
        id="path1-1-9-6-7"
        inkscape:path-effect="#path-effect1-1-2-3-6"
        inkscape:original-d="m 90.552729,71.62362 c 2.984318,0 5.968638,0 8.952955,0"
-       transform="matrix(0.59105253,0,0,0.59105253,5.9408717,94.235805)" />
+       transform="matrix(0.59105253,0,0,0.59105253,5.9408717,95.411508)" />
     <path
        style="fill:none;stroke:#f2f5f8;stroke-width:0.895296;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
        d="m 90.552729,71.62362 c 2.984318,0 5.968638,0 8.952955,0"
        id="path1-1-9-6-7-9"
        inkscape:path-effect="#path-effect1-1-2-3-6-2"
        inkscape:original-d="m 90.552729,71.62362 c 2.984318,0 5.968638,0 8.952955,0"
-       transform="matrix(0.59105253,0,0,0.59105253,8.2922724,81.671466)" />
+       transform="matrix(0.59105253,0,0,0.59105253,8.2922724,82.711509)" />
   </g>
 </svg>
