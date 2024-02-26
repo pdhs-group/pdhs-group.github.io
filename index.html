@@ -4,6 +4,7 @@
 
 <head>
   <title> PDHS Group </title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="description" content="Particle Dynamics in Heterogeneous Systems group website" />
@@ -17,52 +18,29 @@
 <body>
   <div class="hero-img" id="home">
     <div class="hero-text" id="home">
-      <!-- <div class="particle"></div> -->
-      <!-- <div class="particle"></div> -->
-      <!-- <div class="particle"></div> -->
-      <!-- <div class="particle"></div> -->
-      <!-- <div class="particle"></div>             -->
       <h1>Particle Dynamics in <br> Heterogeneous <br> Systems</h1>
       <p class="highlight-text">Research Group at KIT </p>
     </div>
   </div>
 
-  <!-- <div class="navbarbox">
-    <img src="assets/logo_dark.jpg" class="navbar-logo">
-    <div class="navbar-ul"> 
-      <ul>
-        <li class="navbar"><a href="#home" class="navbar">Home</a></li>
-        <li class="navbar"><a href="#about" class="navbar">About</a></li>
-        <li class="navbar"><a href="#people" class="navbar">People</a></li>
-        <li class="navbar"><a href="#projects" class="navbar">Projects</a></li>
-        <li class="navbar"><a href="#teaching" class="navbar">Teaching</a></li>
-        <li class="navbar"><a href="#contact" class="navbar">Contact</a></li>
-        <li class="navbar"><a href="https://github.com/frankrhein" class="navbar"><i class="fa fa-github"></i> Github <i
-              class="fa fa-external-link"></i></a></li>
-        <li class="navbar"><a href="https://scholar.google.de/citations?user=m4G6XugAAAAJ&hl=de" class="navbar"><i
-              class="fa fa-book"></i> Publications <i class="fa fa-external-link"></i></a></li>
-      </ul>
-    </div>
-  </div> -->
-
   <div class="navbarbox">
-    <div class="navbar-logo-container"><img src="assets/logo_dark.jpg" class="navbar-logo"></div>
-    <!-- <div class="navbar-mobile-button"> -->
-      <!-- <label class="hamb" for="side-menu"><i class="fa fa-bars" aria-hidden="true"></i></label> -->
-      <!-- <label class="hamb" for="side-menu"><span class="hamb-line"></span></label> -->
-      <label class="navbar-button" for="side-menu">
-        <img src="assets/navbar_button_off.jpg" id="img_off">
-      </label>
-      <input class="side-menu" type="checkbox" id="side-menu"/>    
-    <!-- </div> -->
+    <div class="navbar-logo-container">
+      <a href="#home">
+        <img src="assets/logo_dark.jpg" class="navbar-logo">
+      </a>
+    </div>
+    <label class="navbar-button" for="side-menu">
+      <img src="assets/navbar_button_off.jpg" id="img_off">
+    </label>
+    <input class="side-menu" type="checkbox" id="side-menu"/>    
     <div class="navbar-link-container"> 
-      <div class="navbar-link"><a href="#home" class="navbar">Home</a></div>
+      <!-- <div class="navbar-link"><a href="#home" class="navbar">Home</a></div> -->
       <div class="navbar-link"><a href="#about" class="navbar">About</a></div>
       <div class="navbar-link"><a href="#people" class="navbar">People</a></div>
       <div class="navbar-link"><a href="#projects" class="navbar">Projects</a></div>
       <div class="navbar-link"><a href="#teaching" class="navbar">Teaching</a></div>
       <div class="navbar-link"><a href="#contact" class="navbar">Contact</a></div>
-      <div class="navbar-link"><a href="https://github.com/frankrhein" class="navbar"><i class="fa fa-github"></i> Github <i
+      <div class="navbar-link"><a href="https://github.com/pdhs-group" class="navbar"><i class="fa fa-github"></i> Github <i
               class="fa fa-external-link"></i></a></div>
       <div class="navbar-link"><a href="https://scholar.google.de/citations?user=m4G6XugAAAAJ&hl=de" class="navbar"><i
               class="fa fa-book"></i> Publications <i class="fa fa-external-link"></i></a></div>
@@ -128,18 +106,17 @@
 
   <div class="section alt_color" id="people">
     <h2 class="underlined">People</h2>
-    <!-- <p>Current members:</p> -->
     <div class="person_grid">
       <div class="card">
         <div class="card-image-container">
           <img src="assets/people/frankrhein_3_2.jpg" alt="Frank Rhein">
         </div>
         <div class="card-content-container">
-          <h3>Frank Rhein</h3>
+          <h3>Dr.-Ing. Frank Rhein</h3>
           <p class="card-subtitle">Group Leader</p>
           <div class="cardtext">
             <p class="cardtext">
-              Some text that describes me lorem ipsum ipsum lorem.
+              Dissertation: Selective hetero-agglomeration. Experimental and theoretical work (population balance equations).
             </p>
           </div>
           <!-- <p>example@example.com</p> -->
@@ -272,7 +249,15 @@
           <p class="card-subtitle">Funding: DFG</p>
           <div class="cardtext">
             <p class="cardtext">
-              Some text that describes me lorem ipsum ipsum lorem.
+              Population balance models (PBMs) enable the simulation of agglomeration and breakage processes. However, the complexity
+              increases in multi-material systems due to heterogeneous surface properties and the need to consider all pairwise
+              interactions.
+            <br> 
+              In this project, a multi-scale approach is used to determine the required kinetic rates (kernels): CFD-DEM simulations
+              at both macro- and micro-scale are integrated with experimental data. Machine learning models are then used to translate
+              these rates for use in both discrete and Monte Carlo PBMs. The overall goal is to establish a systematic methodology for
+              the calculation of hetero-agglomeration processes in arbitrary multi-material systems. This enhances process
+              transparency and control for a variety of applications.
             </p>
           </div>
         </div>
@@ -351,40 +336,47 @@
     <div class="project_grid">
       <div class="card">
         <div class="card-image-container">
-          <img src="assets/projects/proj_dummy.jpg" alt="proj1" style="width:100%" class="centerimg">
+          <img src="assets/teaching/lec_dmp.png" alt="proj1" style="width:100%" class="centerimg">
         </div>
         <div class="card-content-container">
           <h3>Data-Driven Modeling with Python</h3>
           <p class="card-subtitle">Undergraduate, Winter Term</p>
           <div class="cardtext">
             <p class="cardtext">
-              Some text that describes me lorem ipsum ipsum lorem.
+              The focus of the course is on learning the basics and developing familiarity with the Python programming language.
+              The fundamentals of optimization, regression, data integration into physical models, and the solution of simple
+              differential equations are taught as applications (examples) throughout the semester. Valuable tools for automated
+              data processing are taught, which are becoming more and more important in the context of the increasing
+              digitalization of research and industry.
             </p>
           </div>
         </div>
         <div class="card-link-container onecol">
           <div>
-            <button class="card-button"><a href="about:blank">More Info</a></button>  
+            <button class="card-button"><a href="https://www.mvm.kit.edu/lehre_vm_7393.php">More Info</a></button>  
           </div>
         </div>     
       </div>
 
       <div class="card">
         <div class="card-image-container">
-          <img src="assets/projects/proj_dummy.jpg" alt="proj1" style="width:100%" class="centerimg">
+          <img src="assets/teaching/lec_mra.png" alt="proj1" style="width:100%" class="centerimg">
         </div>
         <div class="card-content-container">
           <h3>Mixing, Stirring and Agglomeration</h3>
           <p class="card-subtitle">Postgraduate, Summer Term</p>
           <div class="cardtext">
             <p>
-              Some text that describes me lorem ipsum ipsum lorem.
+              This lecture focuses on the fundamental laws and technical realization of solid mixing, stirring and particle
+              agglomeration processes. It establishes the relationships between product, operating, and design parameters.
+              Selected topics include statistical methods, flow properties, scale-up, and surface forces. The course also
+              introduces the basics of process simulation and provides insight into current research projects.
             </p>
           </div>
         </div>
         <div class="card-link-container onecol">
           <div>
-            <button class="card-button"><a href="about:blank">More Info</a></button>  
+            <button class="card-button"><a href="https://www.mvm.kit.edu/lehre_vm_5783.php">More Info</a></button>  
           </div>
         </div>
       </div>

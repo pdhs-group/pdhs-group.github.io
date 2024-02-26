@@ -32,7 +32,7 @@
     --min-width-project-card: 700px;    
     --min-width-about-image: 500px;
     --max-height-about-image: 42vh;
-    --max-height-card-text: 100px;
+    --max-height-card-text: 200px;
 
     --delay: 2s;
   }
@@ -45,6 +45,7 @@ body {
     font-family: var(--font-2);
     font-weight: 500;
     font-size: 18px;
+    overflow-x: hidden;
 }
 
 a {
@@ -69,7 +70,7 @@ h1{
     text-shadow: 4px 4px 0px black;
     margin: auto;
     margin-top: 0px;
-    max-width: 1000px;
+    /* max-width: 1000px; */
 }
 
 h1:after {
@@ -81,6 +82,7 @@ h1:after {
   border-radius: 5px;
   position: relative;
   width: 600px;
+  max-width: 100%;
   margin-bottom: 50px;
 }
 
@@ -107,6 +109,7 @@ height: 8px;
 border-radius: 4px;
 position: relative;
 width: 400px;
+max-width: 100%;
 margin-bottom: 20px;
 }
 
@@ -119,6 +122,7 @@ margin-bottom: 20px;
   border-radius: 2px;
   position: relative;
   width: 200px;
+  max-width: 100%;
   margin-bottom: 20px;
   }
 
@@ -143,9 +147,9 @@ p {
     font-weight: 600; 
     position: absolute;
     top: 15vh;
-    left: 5vw;
-    margin: auto;
-    max-width: 1200px;
+    left: 0;
+    margin: 0 5vw 0 5vw;
+    max-width: min(1000px, calc(100% - 10vw));
 }
 
 .highlight-text{
@@ -159,14 +163,15 @@ p {
 .section {
     min-height: 100vh;
     padding: 30px;
-    padding-top: 60px;
+    padding-top: 60px;    
+    overflow-x: hidden;
 }
 
 .navbarbox {    
   position: fixed;
   top: 0px;
   background-color: var(--col-1);
-  width: 100%;
+  width: 100vw;
   min-height: 70px;
   margin: 0px;
   z-index: 9999;
