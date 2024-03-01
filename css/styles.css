@@ -337,7 +337,7 @@ a.navbar:hover {
 
 .card-content-container {
   background-color: var(--col-2);
-  padding: 16px 16px;   
+  padding: 20px 20px;   
   transition: 0.5s;
   z-index: 9997;
   h2 {
