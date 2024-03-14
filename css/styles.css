@@ -37,14 +37,18 @@ a {
 
 #contact {
   min-height: 0;
+
   a {    
       color: var(--col-1);
   }
+
   a:hover{
     text-decoration: underline;
     /* text-decoration-color: var(--col-1); */
   }
 }
+
+
 h1{
     font-family: var(--font-1);
     font-weight: 400;
@@ -187,7 +191,7 @@ p {
   border-color: var(--col-1);
 } 
 
-a.navbar:hover {
+.navbar:hover {
     border-color: var(--col-2);
 }
 
@@ -339,22 +343,33 @@ a.navbar:hover {
   width: 100%;
 }
 
+.card-link-container {  
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 20px);
+  transform: translateY(40px);
+  transition: 0.5s;
+  opacity: 0;  
+  bottom: 0;
+  padding: 0 10px 0 10px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  justify-content: space-between;
+  z-index: 9998;
+}
+
 .card:hover{
   box-shadow: 0 8px 12px 0 var(--col-1);
 
   .card-content-container {
     transform: translateY(-20px); 
-  };  
+  }  
 
   .card-image-container {
     opacity: 1; 
     /* transform: translateY(-20px);   */
-  };
-
-  /* .card-button {
-    transform: translateX(-50%) translateY(-20px);
-    opacity: 1;
-  } */
+  }
 
   .card-link-container {
     transform: translateY(-10px);
@@ -372,26 +387,11 @@ a.navbar:hover {
   overflow-y: auto;
   margin-top: 0;
   margin-bottom: 40px;
+  scrollbar-width: none;
 }
 
 .cardtext::-webkit-scrollbar {
   display: none;
-}
-
-.card-link-container {  
-  position: absolute;
-  bottom: 0;
-  width: calc(100% - 20px);
-  transform: translateY(40px);
-  transition: 0.5s;
-  opacity: 0;  
-  bottom: 0;
-  padding: 0 10px 0 10px;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 10px;
-  justify-content: space-between;
-  z-index: 9998;
 }
 
 .onecol{
