@@ -33,6 +33,7 @@ body {
 a {
     text-decoration: none;    
     color: var(--col-2);
+    display: block;
 }
 
 #contact {
@@ -117,6 +118,7 @@ p {
 }
 
 .hero-img {
+    background-color: var(--col-1);
     background-image: url("../assets/hero_16_9.jpg");
     width: 100%;
     min-height: 100vh;
