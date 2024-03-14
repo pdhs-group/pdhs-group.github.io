@@ -1,265 +1,438 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title> PDHS Group </title>
-        <link rel="stylesheet" href="css/styles.css" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta name="description"
-            content="Particle Dynamics in Heterogeneous Systems group website" />
-        <meta name="keywords"
-            content="Frank, Rhein, Particle, Dynamics, Heterogeneous, Systems, KIT, MVM, Hetero-Agglomeration, Agglomeration, Machine Learning" />
-        <meta http-equiv="author"
-            content="Frank, Rhein" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-    </head>
 
-    <body>
-        <div class="hero-img" id="home">
-          <div class="hero-text" id="home">
-            <!-- <div class="particle"></div> -->
-            <!-- <div class="particle"></div> -->
-            <!-- <div class="particle"></div> -->
-            <!-- <div class="particle"></div> -->
-            <!-- <div class="particle"></div>             -->
-            <h1>Particle Dynamics in <br> Heterogeneous <br> Systems</h1>
-            <p class="highlight-text">Research Group at KIT </p>
+<head>
+  <title> PDHS Group </title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content="Particle Dynamics in Heterogeneous Systems group website" />
+  <meta name="keywords"
+    content="Frank, Rhein, Particle, Dynamics, Heterogeneous, Systems, KIT, MVM, Hetero-Agglomeration, Agglomeration, Machine Learning" />
+  <meta http-equiv="author" content="Frank, Rhein" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <div class="hero-img" id="home">
+    <div class="hero-text" id="home">
+      <h1>Particle Dynamics in <br> Heterogeneous <br> Systems</h1>
+      <p class="highlight-text">Research Group at KIT </p>
+    </div>
+  </div>
+
+  <div class="navbarbox">
+    <div class="navbar-logo-container">
+      <a href="#home">
+        <img src="assets/logo_dark.jpg" class="navbar-logo">
+      </a>
+    </div>
+    <label class="navbar-button" for="side-menu">
+      <img src="assets/navbar_button_off.jpg" id="img_off">
+    </label>
+    <input class="side-menu" type="checkbox" id="side-menu"/>    
+    <div class="navbar-link-container"> 
+      <!-- <div class="navbar-link"><a href="#home" class="navbar">Home</a></div> -->
+      <div class="navbar-link"><a href="#about" class="navbar">About</a></div>
+      <div class="navbar-link"><a href="#people" class="navbar">People</a></div>
+      <div class="navbar-link"><a href="#projects" class="navbar">Projects</a></div>
+      <div class="navbar-link"><a href="#teaching" class="navbar">Teaching</a></div>
+      <div class="navbar-link"><a href="#contact" class="navbar">Contact</a></div>
+      <div class="navbar-link"><a href="https://github.com/pdhs-group" class="navbar"><i class="fa fa-github"></i> Github <i
+              class="fa fa-external-link"></i></a></div>
+      <div class="navbar-link"><a href="https://scholar.google.de/citations?user=m4G6XugAAAAJ&hl=de" class="navbar"><i
+              class="fa fa-book"></i> Publications <i class="fa fa-external-link"></i></a></div>
+    </div>
+  </div>
+
+  <div class="section" id="about">
+    <div class="about_grid">
+      <div> <!-- Note: This div is used for grid -->
+        <div class="about-text-container">
+          <h2 class="underlined">About</h2>
+          <p class="larger-text">Particles shape our world and everyday life: Macroscopic material and product properties
+            are
+            determined by interactions and processes at the microscopic level. </p>
+          <p class="larger-text">Our goal is to answer pressing questions about such agglomeration and breakage phenomena,
+            especially when multiple materials come together. Understanding the dynamics of these heterogeneous interfaces
+            is
+            essential for optimizing manufacturing processes, improving material properties, and driving innovation in
+            areas
+            such as energy storage.</p>
+          <p class="larger-text">To achieve this, we emphasize the synergy between theoretical modeling and hands-on
+            experimentation.</p>
+        </div>
+      </div>
+      <div class="about-image-container">
+        <div class="about-block-image">
+          <img src="assets/about_grid/e_mobility.jpg" class="about-image">
+          <div class="about-block-overlay-image">
+            <img src="assets/about_grid/e_mobility-REM.jpg" class="about-image overlay-image">
+          </div>
+          <div class="about-block-overlay">
+            <h3 class="underlined_small">Battery Technology</h3>
+            <p>The microstructure formed by the interactions between active materials and conductive additives is
+              central to battery performance and capacity. Understanding and
+              optimizing these interactions at particle level is crucial to improving energy storage, promoting
+              efficient
+              charge/discharge cycles and ultimately advancing the development of electric mobility.</p>
+          </div> 
+        </div>
+        <div class="about-block-image">
+          <img src="assets/about_grid/microplastics.jpg" class="about-image">
+          <div class="about-block-overlay-image">
+            <img src="assets/about_grid/microplastics-REM.jpg" class="about-image overlay-image">
+          </div>
+          <div class="about-block-overlay">
+            <h3 class="underlined_small">Microplastics</h3>
+            <p>Microplastics, tiny plastic particles of less than five millimetres in size, pose a significant
+              environmental
+              threat as they can harm aquatic ecosystems and potentially enter the food chain. During <em>Magnetic
+                Seeded
+                Filtration</em>, magnetic particles are strategically introduced into the water. Due to their affinity
+              for
+              microplastic surfaces, hetero-agglomerates are formed and efficiently separated in a magnetic field. This
+              innovative
+              approach is an example of how particle technology can be used to address today's environmental challenges
+              with
+              precision and effectiveness.</p>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section alt_color" id="people">
+    <h2 class="underlined">People</h2>
+    <div class="person_grid">
+      <div class="card">
+        <div class="card-image-container">
+          <img src="assets/people/frankrhein_3_2.jpg" alt="Frank Rhein">
+        </div>
+        <div class="card-content-container">
+          <h3>Frank Rhein</h3>
+          <p class="card-subtitle">Group Leader</p>
+          <div class="cardtext">
+            <p class="cardtext">
+              Experimental and theoretical work on selective hetero-agglomeration. Separation of microplastics via magnetic seeded filtration. PBE modeling and data integration via machine learning.
+            </p>
+          </div>
+          <!-- <p>example@example.com</p> -->
+        </div>
+        <div class="card-link-container">
+          <div>
+            <button class="card-button"><a href="https://www.mvm.kit.edu/Mitarbeiter_MVM_4764.php">More Info</a></button>  
+          </div>
+          <div>
+            <button class="card-button contact-button"><a href="mailto:frank.rhein@kit.edu"><i class="fa fa-envelope"></i></a></button>  
           </div>
         </div>
+      </div>
 
-        <div class="navbarbox">
-            <img src="assets/logo_dark.jpg" class="navbar-logo">
-            <ul class="navbar-ul">
-              <li class="navbar"><a href="#home" class="navbar">Home</a></li>
-              <li class="navbar"><a href="#about" class="navbar">About</a></li>
-              <li class="navbar"><a href="#people" class="navbar">People</a></li>
-              <li class="navbar"><a href="#projects" class="navbar">Projects</a></li>
-              <li class="navbar"><a href="#teaching" class="navbar">Teaching</a></li>
-              <li class="navbar"><a href="#contact" class="navbar">Contact</a></li>
-              <li class="navbar"><a href="https://github.com/frankrhein" class="navbar"><i class="fa fa-github"></i> Github <i class="fa fa-external-link"></i></a></li>
-              <li class="navbar"><a href="https://scholar.google.de/citations?user=m4G6XugAAAAJ&hl=de" class="navbar"><i class="fa fa-book"></i> Publications <i class="fa fa-external-link"></i></a></li>
-            </ul>
+      <div class="card">
+        <div class="card-image-container">
+          <img src="assets/people/simon_buchheiser_3_2.jpg" alt="Dummy" style="width:100%">
+        </div>
+        <div class="card-content-container">
+          <h3>Simon Buchheiser</h3>
+          <p class="card-subtitle">PhD Student</p>
+          <div class="cardtext">
+            <p class="cardtext">
+              Experimental work on hetero-aggregation in flames. Multi-scale characterization with SAXS, TEM and AUC.
+            </p>
           </div>
-
-        <div class="section" id="about">
-          <div class="lrcolumn">
-            <div class="lrcolumn-container">
-              <h2 class="underlined">About</h2>
-              <p class="larger-text">Particles shape our world and everyday life: Macroscopic material and product properties are
-                determined by interactions and processes at the microscopic level. </p>
-              <p class="larger-text">Our goal is to answer pressing questions about such agglomeration and breakage phenomena,
-                especially when multiple materials come together. Understanding the dynamics of these heterogeneous interfaces is
-                essential for optimizing manufacturing processes, improving material properties, and driving innovation in areas
-                such as energy storage.</p>
-              <p class="larger-text">To achieve this, we emphasize the synergy between theoretical modeling and hands-on
-                experimentation.</p>
-            </div>
+          <!-- <p>example@example.com</p> -->
+        </div>
+        <div class="card-link-container">
+          <div>
+            <button class="card-button"><a href="https://www.mvm.kit.edu/562_6612.php">More Info</a></button>  
           </div>
-          <div class="lrcolumn">
-            <div class="about-image-container">
-              <div class="about-block-image">
-                <img src="assets/about_grid/e_mobility.jpg" class="about-image">
-                <div class="about-block-overlay-image">
-                  <img src="assets/about_grid/e_mobility-REM.jpg" class="about-image overlay-image">
-                </div>
-                  <div class="about-block-overlay">
-                  <h3 class="underlined_small">Battery Technology</h3>
-                  <p>The microstructure formed by the interactions between active materials and conductive additives is central to battery performance and capacity. Understanding and
-                    optimizing these interactions at particle level is crucial to improving energy storage, promoting efficient
-                    charge/discharge cycles and ultimately advancing the development of electric mobility.</p>
-                  </div>
-              </div>
-              <div class="about-block-image">
-                <img src="assets/about_grid/microplastics.jpg" class="about-image">
-                <div class="about-block-overlay-image">
-                  <img src="assets/about_grid/microplastics-REM.jpg" class="about-image overlay-image">
-                </div>
-                <div class="about-block-overlay">
-                  <h3 class="underlined_small">Microplastics</h3>
-                  <p>Microplastics, tiny plastic particles of less than five millimetres in size, pose a significant environmental
-                    threat as they can harm aquatic ecosystems and potentially enter the food chain. During <em>Magnetic Seeded
-                      Filtration</em>, magnetic particles are strategically introduced into the water. Due to their affinity for
-                    microplastic surfaces, hetero-agglomerates are formed and efficiently separated in a magnetic field. This innovative
-                    approach is an example of how particle technology can be used to address today's environmental challenges with
-                    precision and effectiveness.</p>
-                </div>
-                <!-- <div class="about-block-img-overlay">
-                  <img src="assets/about_grid/microplastics-REM.jpg" class="about-img-overlay">
-                </div> -->
-              </div>
-            </div>
+          <div>
+            <button class="card-button contact-button"><a href="mailto:simon.buchheiser@kit.edu"><i class="fa fa-envelope"></i></a></button>  
           </div>
         </div>
-        
-        <div class="section alt_color" id="people">
-            <h2 class="underlined">People</h2>
-            <!-- <p>Current members:</p> -->
-            <div class="row">
-                <div class="personcolumn">
-                  <div class="card">
-                    <div class="img_container">
-                        <img src="assets/people/frankrhein_3_2.jpg" alt="Frank Rhein" style="width:100%">
-                    </div>                    
-                    <div class="container">
-                      <h3>Dr.-Ing. Frank Rhein</h3>
-                      <p class="title">Group Leader</p>
-                      <div class="cardtext">
-                        <p class="cardtext">
-                            Some text that describes me lorem ipsum ipsum lorem. 
-                        </p>
-                      </div>
-                      <!-- <p>example@example.com</p> -->
-                      <p><button class="button"><a href="mailto:frank.rhein@kit.edu">Say Hi!</a></button></p>
-                    </div>
-                  </div>
-                </div>
-              
-                <div class="personcolumn">
-                  <div class="card">
-                    <div class="img_container">
-                        <img src="assets/people/dummy_3_2.jpg" alt="Dummy" style="width:100%">
-                    </div>  
-                    <div class="container">
-                      <h3>Dummy</h3>
-                      <p class="title">PhD Student</p>
-                      <div class="cardtext">
-                        <p class="cardtext">
-                            Some text that describes me lorem ipsum ipsum lorem. 
-                        </p>
-                      </div>
-                      <!-- <p>example@example.com</p> -->
-                      <p><button class="button">Contact</button></p>
-                    </div>
-                  </div>
-                </div>
-              
-                <div class="personcolumn">
-                  <div class="card">
-                    <div class="img_container">
-                        <img src="assets/people/dummy_3_2.jpg" alt="Dummy" style="width:100%">
-                    </div>  
-                    <div class="container">
-                      <h3>Dummy</h3>
-                      <p class="title">PhD Student</p>
-                      <div class="cardtext">
-                        <p class="cardtext">
-                            Some text that describes me lorem ipsum ipsum lorem. lang lang lang lang 
-                            lang lang lang lang lang
-                            Some text that describes me lorem ipsum ipsum lorem. lang lang lang lang 
-                            lang lang lang lang lang
-                            Some text that describes me lorem ipsum ipsum lorem. lang lang lang lang 
-                            lang lang lang lang lang
-                            Some text that describes me lorem ipsum ipsum lorem. lang lang lang lang 
-                            lang lang lang lang lang
-                        </p>
-                      </div>
-                      <!-- <p>example@example.com</p> -->
-                      <p><button class="button">Contact</button></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image-container">
+          <img src="assets/people/haoran_ji_3_2.jpg" alt="Dummy" style="width:100%">
         </div>
-
-        <div class="section" id="projects">
-            <h2 class="underlined">Projects</h2>
-            <!-- <p>Some of our currents projects: </p> -->
-            <div class="row">
-                <div class="projectcolumn">
-                  <div class="card alt_color">
-                    <div class="img_container">
-                        <img src="images/proj_banner.png" alt="proj1" style="width:100%" class="centerimg">
-                    </div>
-                    <div class="container alt_color">
-                      <h3>Project 1</h3>
-                      <p class="title">Funding...</p>
-                      <div class="cardtext">
-                        <p class="cardtext">
-                            Some text that describes me lorem ipsum ipsum lorem. 
-                        </p>
-                      </div>
-                      <p><button class="button">Link</button></p>
-                    </div>
-                  </div>
-                </div>
-              
-                <div class="projectcolumn">
-                    <div class="card alt_color">
-                        <div class="img_container">
-                            <img src="images/proj_banner.png" alt="proj2" style="width:100%" class="centerimg">
-                        </div>
-                      <div class="container alt_color">
-                        <h3>Project 1</h3>
-                        <p class="title">Funding...</p>
-                        <div class="cardtext">
-                          <p class="cardtext">
-                              Some text that describes me lorem ipsum ipsum lorem. 
-                          </p>
-                        </div>
-                        <p><button class="button">Link</button></p>
-                      </div>
-                    </div>
-                  </div>
-
-            </div>
+        <div class="card-content-container">
+          <h3>Haoran Ji</h3>
+          <p class="card-subtitle">PhD Student</p>
+          <div class="cardtext">
+            <p class="cardtext">
+              Multi-scale modeling with PBE and CFD-DEM for selective hetero-agglomeration. Parameter optimization and integration via machine learning.
+            </p>
+          </div>
+          <!-- <p>example@example.com</p> -->
         </div>
-
-        <div class="section alt_color" id="teaching">
-            <h2 class="underlined">Teaching</h2>
-            <!-- <p>We teach two courses at KIT</p> -->
-            <div class="row">
-                <div class="projectcolumn">
-                  <div class="card">
-                    <div class="img_container">
-                        <img src="images/proj_banner.png" alt="proj1" style="width:100%" class="centerimg">
-                    </div>
-                    <div class="container">
-                      <h3>Data-Driven Modeling with Python</h3>
-                      <p class="title">Undergraduate, Winter Term</p>
-                      <div class="cardtext">
-                        <p class="cardtext">
-                            Some text that describes me lorem ipsum ipsum lorem. 
-                        </p>
-                      </div>
-                      <p><button class="button">Link</button></p>
-                    </div>
-                  </div>
-                </div>
-              
-                <div class="projectcolumn">
-                    <div class="card">
-                        <div class="img_container">
-                            <img src="images/proj_banner.png" alt="proj1" style="width:100%" class="centerimg">
-                        </div>
-                      <div class="container">
-                        <h3>Mixing, Stirring and Agglomeration</h3>
-                        <p class="title">Postgraduate, Summer Term</p>
-                        <div class="cardtext">
-                          <p class="cardtext">
-                              Some text that describes me lorem ipsum ipsum lorem. 
-                          </p>
-                        </div>
-                        <p><button class="button">Link</button></p>
-                      </div>
-                    </div>
-                  </div>
-
-            </div>
+        <div class="card-link-container">
+          <div>
+            <button class="card-button"><a href="https://www.mvm.kit.edu/562_7487.php">More Info</a></button>  
+          </div>
+          <div>
+            <button class="card-button contact-button"><a href="mailto:haoran.ji@kit.edu"><i class="fa fa-envelope"></i></a></button>  
+          </div>
         </div>
+      </div>
 
-        <div class="section" id="contact">
-            <h2 class="underlined">Contact</h2>
-            <p>Please contact me at:</p>  
-            <address>
-                <ul>
-                    <li><a href="mailto:frank.rhein@kit.edu">frank.rhein@kit.edu</a></li>
-                    <li>Strasse am Forum 8, 76131 Karlsruhe, Germany</li>
-                    <li>+49 721 608 42408</li>
-                </ul>
-            </address>
+      <div class="card">
+        <div class="card-image-container">
+          <img src="assets/people/juan_meza_3_2.jpg" alt="Dummy" style="width:100%">
         </div>
+        <div class="card-content-container">
+          <h3>Juan Meza</h3>
+          <p class="card-subtitle">PhD Student</p>
+          <div class="cardtext">
+            <p class="cardtext">
+              Experimental and theoretical work on continuous battery slurry production with twin screw extruders. Focus on carbon black dispersion and slurry quality. Process simulation with SPH.
+            </p>
+          </div>
+          <!-- <p>example@example.com</p> -->
+        </div>
+        <div class="card-link-container">
+          <div>
+            <button class="card-button"><a href="https://www.mvm.kit.edu/562_6073.php">More Info</a></button>  
+          </div>
+          <div>
+            <button class="card-button contact-button"><a href="mailto:juan.meza@kit.edu"><i class="fa fa-envelope"></i></a></button>  
+          </div>
+        </div>
+      </div>
 
-    </body>
+      <div class="card">
+        <div class="card-image-container">
+          <img src="assets/people/kevin_raczka_3_2.jpg" alt="Dummy" style="width:100%">
+        </div>
+        <div class="card-content-container">
+          <h3>Kevin Raczka</h3>
+          <p class="card-subtitle">PhD Student</p>
+          <div class="cardtext">
+            <p class="cardtext">
+              Experimental work on continuous battery slurry production with twin screw extruders. Focus on the development of an automated process control strategy and a cleaning concept. 
+            </p>
+          </div>
+          <!-- <p>example@example.com</p> -->
+        </div>
+        <div class="card-link-container">
+          <div>
+            <button class="card-button"><a href="https://www.mvm.kit.edu/562_6920.php">More Info</a></button>  
+          </div>
+          <div>
+            <button class="card-button contact-button"><a href="mailto:kevin.raczka@kit.edu"><i class="fa fa-envelope"></i></a></button>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="projects">
+    <h2 class="underlined">Projects</h2>
+    <!-- <p>Some of our currents projects: </p> -->
+    <div class="project_grid">
+      <div class="card alt_color">
+        <div class="card-image-container">
+          <img src="assets/projects/proj_predictive_pbe.jpg" alt="proj1" style="width:100%" class="centerimg">
+        </div>
+        <div class="card-content-container alt_color">
+          <h3>Predictive Calculation of Hetero-Agglomeration Processes in Multi-Substance Suspensions</h3>
+          <p class="card-subtitle">Funding: DFG</p>
+          <div class="cardtext">
+            <p class="cardtext">
+              Population balance models (PBMs) enable the simulation of agglomeration and breakage processes. However, the complexity
+              increases in multi-material systems due to heterogeneous surface properties and the need to consider all pairwise
+              interactions.
+            <br> 
+              In this project, a multi-scale approach is used to determine the required kinetic rates (kernels): CFD-DEM simulations
+              at both macro- and micro-scale are integrated with experimental data. Machine learning models are then used to translate
+              these rates for use in both discrete and Monte Carlo PBMs. The overall goal is to establish a systematic methodology for
+              the calculation of hetero-agglomeration processes in arbitrary multi-material systems. This enhances process
+              transparency and control for a variety of applications.
+            </p>
+          </div>
+        </div>
+        <div class="card-link-container onecol">
+          <div>
+            <button class="card-button"><a href="https://gepris.dfg.de/gepris/projekt/520278921?language=en">More Info</a></button>  
+          </div>
+        </div>
+      </div>
+
+      <div class="card alt_color">
+        <div class="card-image-container">
+          <img src="assets/projects/hetero_agg.jpg" alt="proj1" style="width:100%" class="centerimg">
+        </div>
+        <div class="card-content-container alt_color">
+          <h3>Hetero-Aggregation of Colloidal Silica and Carbon Black in Flames</h3>
+          <p class="card-subtitle">Funding: DFG, SPP 2289</p>
+          <div class="cardtext">
+            <p class="cardtext">
+              Nanoparticles are widely used in industrial products because they combine material inherent physio-chemical properties
+              with high surface to volume ratios. These properties are multiplied and complemented by the functional mixing with
+              other nanoparticle species. Subsequently, hetero-contacts are formed at the distinct interface of the two materials,
+              which are of fundamental importance for the desired functional properties of the mixture. 
+            <br>
+              This project focuses on the improvement of carbon black properties for battery applications by hetero-aggregation with silica.
+              The characterization of the hetero-contact and the resulting mixing quality of the hetero-aggregates is still a major
+              challenge. Hence, the development of an extensive image analysis of the mixing quality with TEM in combination with
+              multi-scale particle analysis by SAXS and ADC is pursued. The combination of both methods provides holistic
+              information on all relevant length scales, leading to an understanding of the interaction between mixing quality and
+              aggregate properties. This comprehensive insight into the quantity and quality of the hetero-contacts is pivotal to
+              bridge the gap from aggregate properties to functional properties and the resulting material functions. Ultimately, it
+              is envisioned to determine which nanoscale structure is most beneficial for the application in batteries in order to
+              improve the manufacturing process of batteries as well as the electro-chemical performance.
+            </p>
+          </div>
+        </div>
+        <div class="card-link-container onecol">
+          <div>
+            <button class="card-button"><a href="https://gepris.dfg.de/gepris/projekt/462264068?language=en">More Info</a></button>  
+          </div>
+        </div>
+      </div>
+
+      <div class="card alt_color">
+        <div class="card-image-container">
+          <img src="assets/projects/intelli_past.jpg" alt="proj2" style="width:100%" class="centerimg">
+        </div>
+        <div class="card-content-container alt_color">
+          <h3>IntelliPast: Development of an Intelligent and Autonomous Paste Production Process</h3>
+          <p class="card-subtitle">Funding: BMBF</p>
+          <div class="cardtext">
+            <p class="cardtext">
+              This research project aims to reduce production costs and increase the product quality of battery cells. The concept
+              is based on an innovative and agile production technology that allows flexible battery formats with the possibility of
+              a quick recipe change for continuous cell production. The aim is to achieve sustainable production with minimal use of
+              raw materials, minimizing raw material waste and paste loss. The process control strategy is based on an adaptive,
+              digital concept to ensure high paste quality with the highest degree of automation and minimum energy consumption.
+              Continuous mixing using an extruder is a recommended option to avoid a process interruption with the subsequent
+              process steps.
+            </p>
+          </div>
+        </div>
+        <div class="card-link-container onecol">
+          <div>
+            <button class="card-button"><a href="https://inzepro-cluster.de/projekt/intellipast/">More Info</a></button>  
+          </div>
+        </div>
+      </div>
+
+      <div class="card alt_color">
+        <div class="card-image-container">
+          <img src="assets/projects/agilo_bat.jpg" alt="proj2" style="width:100%" class="centerimg">
+        </div>
+        <div class="card-content-container alt_color">
+          <h3>AgiloBat2: Flexible Production of Battery Cells</h3>
+          <p class="card-subtitle">Funding: BMBF</p>
+          <div class="cardtext">
+            <p class="cardtext">
+              The aim of the AgiloBat cluster project is to develop an agile production system for manufacturing cell assemblies
+              from format-flexible pouch cells with modular process control and end-to-end quality assurance. The fully automated
+              production system consists of robot cells in which a controllable microenvironment is maintained. This eliminates the
+              need for large drying rooms and avoids the introduction of moisture by humans. We are investigating and modelling the
+              mixing and dispersion effect of a twin-screw extruder for process integration in battery cell production. The
+              development of a digital twin with SPH and compartment models contributes to the simulation-based optimization of the
+              process. By integrating inline measurement technology, the mixing process can be monitored in real time.
+            </p>
+          </div>
+        </div>
+        <div class="card-link-container onecol">
+          <div>
+            <button class="card-button"><a href="https://inzepro-cluster.de/projekt/intellipast/">More Info</a></button>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section alt_color" id="teaching">
+    <h2 class="underlined">Teaching</h2>
+    <!-- <p>We teach two courses at KIT</p> -->
+    <div class="project_grid">
+      <div class="card">
+        <div class="card-image-container">
+          <img src="assets/teaching/lec_dmp.png" alt="proj1" style="width:100%" class="centerimg">
+        </div>
+        <div class="card-content-container">
+          <h3>Data-Driven Modeling with Python</h3>
+          <p class="card-subtitle">Undergraduate, Winter Term</p>
+          <div class="cardtext">
+            <p class="cardtext">
+              The focus of the course is on learning the basics and developing familiarity with the Python programming language.
+              The fundamentals of optimization, regression, data integration into physical models, and the solution of simple
+              differential equations are taught as applications (examples) throughout the semester. Valuable tools for automated
+              data processing are taught, which are becoming more and more important in the context of the increasing
+              digitalization of research and industry.
+            </p>
+          </div>
+        </div>
+        <div class="card-link-container onecol">
+          <div>
+            <button class="card-button"><a href="https://www.mvm.kit.edu/lehre_vm_7393.php">More Info</a></button>  
+          </div>
+        </div>     
+      </div>
+
+      <div class="card">
+        <div class="card-image-container">
+          <img src="assets/teaching/lec_mra.png" alt="proj1" style="width:100%" class="centerimg">
+        </div>
+        <div class="card-content-container">
+          <h3>Mixing, Stirring and Agglomeration</h3>
+          <p class="card-subtitle">Postgraduate, Summer Term</p>
+          <div class="cardtext">
+            <p>
+              This lecture focuses on the fundamental laws and technical realization of solid mixing, stirring and particle
+              agglomeration processes. It establishes the relationships between product, operating, and design parameters.
+              Selected topics include statistical methods, flow properties, scale-up, and surface forces. The course also
+              introduces the basics of process simulation and provides insight into current research projects.
+            </p>
+          </div>
+        </div>
+        <div class="card-link-container onecol">
+          <div>
+            <button class="card-button"><a href="https://www.mvm.kit.edu/lehre_vm_5783.php">More Info</a></button>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <div class="contact_grid">
+      <div>
+        <h2 class="underlined">Contact</h2>
+        <p>If you want to get in touch please write us an email to <a href="mailto:contact@pdhs-group.com"><i
+              class="fa fa-envelope"></i> contact ∂ pdhs-group com</a>.</p>
+        <p>The PDHS Group is affiliated with the </p>
+        <p><a href="https://www.mvm.kit.edu/english/index.php"> Institute of Mechanical Process Engineering and Mechanics <i class="fa fa-external-link"></i></a> at the<br>
+          <a href="https://www.kit.edu/english/index.php">Karlsruhe Institute of Technology (KIT) <i class="fa fa-external-link"></i></a>.</p>
+        <p>You can find us at:</p>
+        <em>Strasse am Forum 8<br>76131 Karlsruhe<br>Germany</em>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1850.4234607236842!2d8.414607677536162!3d49.0126024377892!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479706341b707bb7%3A0xa95e31f09878c49d!2sKIT%20Institut%20f%C3%BCr%20Mechanische%20Verfahrenstechnik%20und%20Mechanik%20(MVM)!5e0!3m2!1sen!2sen!4v1708692697665!5m2!1sen!2sen"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      </div>
+  </div>
+
+<script>
+  function navbar_fun() {
+    var x = document.getElementsByClassName("navbar-link-container");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+
+</body>
+
 </html>
-
