@@ -42,6 +42,7 @@ a {
 
 #contact a {    
       color: var(--col-1);
+      display: inline;
   }
 
 #contact a:hover{
