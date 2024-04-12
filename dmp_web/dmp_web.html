@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Driven Modeling in Python</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Quick Start" href="quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Data Driven Modeling in Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="_nb/NB_1_Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_nb/NB_2_Basics.html">Python Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_nb/NB_3_Numpy.html">Numpy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_nb/NB_4_Matplotlib.html">Matplotlib</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_nb/NB_5_Read_Write.html">Read and Write Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_nb/NB_6_Optimization.html">Optimization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_nb/NB_7_Linear_Regression.html">Linear Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_nb/NB_8_Nonlinear_Regression.html">Nonlinear Regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_nb/NB_9_Differential_Equations.html">Differential Equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_nb/NB_10_Data_Integration.html">Data Integration</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Data Driven Modeling in Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Data Driven Modeling in Python</li>
+      <!-- <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.md.txt" rel="nofollow"> View page source</a>
+      </li> -->
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="dpbe-discrete-population-balance-equation-solver">
+<h1>Data Driven Modeling in Python<a class="headerlink" href="#dpbe-discrete-population-balance-equation-solver" title="Permalink to this heading"></a></h1>
+
+<!-- <p><strong>Repo</strong>: <a class="reference external" href="https://github.com/adin888/PSD_opt">On Github</a>  (<code class="docutils literal notranslate"><span class="pre">https://github.com/adin888/PSD_opt</span></code>) <br /> -->
+<strong>Authors</strong>: Frank Rhein (<a class="reference external" href="mailto:frank&#46;rhein&#37;&#52;&#48;kit&#46;edu">frank<span>&#46;</span>rhein<span>&#64;</span>kit<span>&#46;</span>edu</a>), Marvin Winkler (<a class="reference external" href="mailto:marvin&#46;winkler2&#37;&#52;&#48;kit&#46;edu">marvin<span>&#46;</span>winkler2<span>&#64;</span>kit<span>&#46;</span>edu</a>). <br />
+<strong>Group</strong>: <a href="https://pdhs-group.com"> Particle Dynamics in Heterogeneous Systems</a><br/>
+<strong>Affiliation</strong>: Karlsruhe Institute of Technology (KIT), Institute of Mechanical Process Engineering and Mechanics<br/>
+<strong>Web (KIT)</strong>: <a href="https://www.mvm.kit.edu/lehre_vm_7393.php"> Link</a></p>
+<p><img alt="Logo" src="_nb/assets/Logo_eng.png" /></p>
+</section>
+
+           </div>
+          </div>
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Frank Rhein</p>
+  </div>
+
+      <a href="https://github.com/readthedocs/sphinx_rtd_theme">Theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
