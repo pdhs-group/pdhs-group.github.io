@@ -401,6 +401,10 @@ p {
   display: none;
 }
 
+.cardtext p {
+  margin: 0;
+}
+
 .onecol{
   grid-template-columns: 1fr;
 }
@@ -436,7 +440,67 @@ p {
 }
 
 .alt_color{
-  background-color: var(--col-3);  
+  background-color: var(--col-3);
+}
+
+/* Ausklappbare Zusatzlisten (Alumni, abgeschlossene Projekte).
+   Natives <details>/<summary>, daher ohne JavaScript. */
+.collapsible {
+  margin-top: 50px;
+}
+
+.collapsible-summary {
+  display: inline-block;
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.collapsible-summary::-webkit-details-marker {
+  display: none;
+}
+
+.collapsible-summary h3 {
+  display: inline-block;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.collapsible-summary:hover h3 {
+  color: var(--col-4);
+}
+
+/* Chevron als reines CSS-Element (kein Font-Awesome-Icon): unabhaengig vom CDN
+   und von dessen Kaskade, da font-awesome.min.css nach styles.css eingebunden wird */
+.collapsible-summary h3::after {
+  content: "";
+  display: inline-block;
+  width: 0.32em;
+  height: 0.32em;
+  margin-left: 0.45em;
+  border-right: 0.1em solid currentColor;
+  border-bottom: 0.1em solid currentColor;
+  transform: translateY(-0.18em) rotate(45deg);
+  transition: 0.5s;
+}
+
+.collapsible[open] .collapsible-summary h3::after {
+  transform: translateY(0.08em) rotate(-135deg);
+}
+
+/* auto-fill statt auto-fit: leere Spalten bleiben erhalten, damit wenige
+   Karten dieselbe Breite haben wie die Karten der aktiven Liste darueber */
+.alumni_grid {
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--min-width-person-card), 100%), 1fr));
+}
+
+.completed_grid {
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--min-width-project-card), 100%), 1fr));
+}
+
+/* Karten ohne Links: Hover-Verschiebung des Textes unterdruecken */
+.card-nolinks:hover .card-content-container {
+  transform: none;
 }
 
 .side-menu {
